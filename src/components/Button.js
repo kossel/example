@@ -6,14 +6,14 @@ import s from './Button.css';
 /**
  * The only true button.
  */
-export default function Button({ color, size, children }) {
+export default function Button({ className, color, size, children }) {
 	let styles = {
 		color,
 		fontSize: Button.sizes[size],
 	};
 
 	return (
-		<button className={s.root} style={styles}>
+		<button className={`${s.root} ${className}`} style={styles}>
 			{children}
 		</button>
 	);
