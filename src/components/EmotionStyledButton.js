@@ -10,6 +10,9 @@ const StyledButton = styled(Button)(
 );
 
 // this doesn't generate propTypes, looks like styleguidist doesn't understand it's a component
+StyledButton.propTypes = {
+    type: PropTypes.string, 
+  }
 export default StyledButton;
 
 
